@@ -102,22 +102,18 @@ namespace CG1.Ex03.Mathematics
 
         public static Vector4 operator *(Vector4 a, Matrix44 b)
         {
-            return new Vector4(
-                a.X * b.M00 + a.Y * b.M10 + a.Z * b.M20 + a.W * b.M30,
-                a.X * b.M01 + a.Y * b.M11 + a.Z * b.M21 + a.W * b.M31,
-                a.X * b.M02 + a.Y * b.M12 + a.Z * b.M22 + a.W * b.M32,
-                a.X * b.M03 + a.Y * b.M13 + a.Z * b.M23 + a.W * b.M33
-            );
+            // Returns multiplication of vector and matrix.
+            // Calculated using matrix multiplication where from vector a is created matrix
+            Matrix44 tmp = new Matrix44(a.X,a.Y,a.Z,a.W, 0,0,0,0, 0,0,0,0, 0,0,0,0) * b;
+            return new Vector4(tmp.M00, tmp.M01, tmp.M02, tmp.M03);
         }
 
         public static Vector4 operator *(Matrix44 a, Vector4 b)
         {
-            return new Vector4(
-                a.M00 * b.X + a.M01 * b.Y + a.M02 * b.Z + a.M03 * b.W,
-                a.M10 * b.X + a.M11 * b.Y + a.M12 * b.Z + a.M13 * b.W,
-                a.M20 * b.X + a.M21 * b.Y + a.M22 * b.Z + a.M23 * b.W,
-                a.M30 * b.X + a.M31 * b.Y + a.M32 * b.Z + a.M33 * b.W
-            );
+            // Returns multiplication of matrix and vector.
+            // Calculated using matrix multiplication where from vector b is created matrix
+            Matrix44 tmp = a * new Matrix44(b.X,0,0,0, b.Y,0,0,0, b.Z,0,0,0, 1,0,0,0);
+            return new Vector4(tmp.M00, tmp.M10, tmp.M20, tmp.M30);
         }
 
         #endregion
@@ -130,11 +126,8 @@ namespace CG1.Ex03.Mathematics
         /// <param name="a"></param>
         public static Matrix44 Scale(Vector4 scaleVector)
         {
-            Matrix44 result = Identity;
-
-            //ToDo: This function will return scale matrix with scale vector 'translateVector'.
-
-            return result;
+            // Returns scale matrix.
+            return new Matrix44(scaleVector.X,0,0,0, 0,scaleVector.Y,0,0 , 0,0,scaleVector.Z,0, 0,0,0,1);
         }
 
         /// <summary>
@@ -143,11 +136,8 @@ namespace CG1.Ex03.Mathematics
         /// <param name="a"></param>
         public static Matrix44 Translate(Vector4 translateVector)
         {
-            Matrix44 result = Identity;
-
-            //ToDo: This function will return translate matrix with translate vector 'translateVector'.
-
-            return result;
+            // Returns translate matrix.
+            return new Matrix44(1,0,0,translateVector.X, 0,1,0,translateVector.Y, 0,0,1,translateVector.Z, 0,0,0,1);
         }
 
         /// <summary>
@@ -156,12 +146,14 @@ namespace CG1.Ex03.Mathematics
         /// <param name="a"></param>
         public static Matrix44 RotateX(double angleDeg)
         {
-            //ToDo: Convert double 'angleDeg' to radians - Why, you ask? Answer is basic geometry of rotations.
-            Matrix44 result = Identity;
-
-            //ToDo: This function will return rotate matrix in X direction.
-
-            return result;
+            // Returns rotation matrix around X axis.
+            Double angle = MathEx.DegToRad(angleDeg);
+            return new Matrix44(
+            	1, 0, 0, 0,
+            	0, Math.Cos(angle), -Math.Sin(angle), 0,
+            	0, Math.Sin(angle),  Math.Cos(angle), 0,
+            	0, 0, 0, 1
+            );
         }
 
         /// <summary>
@@ -170,12 +162,14 @@ namespace CG1.Ex03.Mathematics
         /// <param name="a"></param>
         public static Matrix44 RotateY(double angleDeg)
         {
-            //ToDo: Convert double 'angleDeg' to radians
-            Matrix44 result = Identity;
-
-            //ToDo: This function will return rotate matrix in Y direction.
-
-            return result;
+            // Returns rotation matrix around Y axis.
+            Double angle = MathEx.DegToRad(angleDeg);
+            return new Matrix44(
+            	 Math.Cos(angle), 0, Math.Sin(angle), 0,
+            	 0, 1, 0, 0,
+            	 -Math.Sin(angle), 0, Math.Cos(angle), 0,
+            	 0, 0, 0, 1
+            );
         }
 
         /// <summary>
@@ -184,12 +178,14 @@ namespace CG1.Ex03.Mathematics
         /// <param name="a"></param>
         public static Matrix44 RotateZ(double angleDeg)
         {
-            //ToDo: Convert double 'angleDeg' to radians
-            Matrix44 result = Identity;
-
-            //ToDo: This function will return rotate matrix in Z direction.
-
-            return result;
+            // Returns rotation matrix around Z axis.
+            Double angle = MathEx.DegToRad(angleDeg);
+            return new Matrix44(
+            	Math.Cos(angle), -Math.Sin(angle), 0, 0,
+            	Math.Sin(angle),  Math.Cos(angle), 0, 0,
+            	0, 0, 1, 0,
+            	0, 0, 0, 1
+            );
         }
 
         #endregion

@@ -53,7 +53,6 @@ namespace CG1.Ex03
                 //Add new vertex to selected polyline
                 else if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
                 {
-                	System.Diagnostics.Debug.WriteLine("Alt");
                     PolyLine selectedPolyLine = null;
                     foreach (var polyLine in PolyLines)
                     {

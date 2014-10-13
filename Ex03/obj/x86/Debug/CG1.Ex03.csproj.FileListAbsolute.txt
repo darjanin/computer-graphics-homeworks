@@ -49,3 +49,11 @@ C:\Users\IEUser\Desktop\ComputerGraphicsEx03\obj\x86\Debug\CG1.Ex03.Properties.R
 C:\Users\IEUser\Desktop\ComputerGraphicsEx03\obj\x86\Debug\CG1.Ex03.csproj.GenerateResource.Cache
 C:\Users\IEUser\Desktop\ComputerGraphicsEx03\obj\x86\Debug\CG1.Ex03.exe
 C:\Users\IEUser\Desktop\ComputerGraphicsEx03\obj\x86\Debug\CG1.Ex03.pdb
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\bin\Debug\CG1.Ex03.exe
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\bin\Debug\CG1.Ex03.pdb
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\obj\x86\Debug\CG1.Ex03.csprojResolveAssemblyReference.cache
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\obj\x86\Debug\CG1.Ex03.Form1.resources
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\obj\x86\Debug\CG1.Ex03.Properties.Resources.resources
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\obj\x86\Debug\CG1.Ex03.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\obj\x86\Debug\CG1.Ex03.exe
+C:\Users\IEUser\Desktop\ComputerGraphicsHomeworks\Ex03\obj\x86\Debug\CG1.Ex03.pdb
