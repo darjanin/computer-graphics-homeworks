@@ -40,14 +40,14 @@ namespace CG1.Ex03.Geometry
         public void Draw(Graphics g)
         {
             Vertex p0 = null;
-            double vectorLenght = 40;
+            double vectorLength = 40;
 
             // Transform matrix applied to all points
             Matrix44 transformMatrix = Matrix44.Translate(new Vector4(Pivot.X, Pivot.Y, 0, 1)) * Matrix44.RotateZ(OrientationZDeg) * Matrix44.Scale(Scale);
             
             //ToDo: Apply this new transform matrix to pivot axises
-            Vector4 xAxis = transformMatrix * (new Vector4(vectorLenght, 0, 0, 1));
-            Vector4 yAxis = transformMatrix * (new Vector4(0, vectorLenght, 0, 1));
+            Vector4 xAxis = transformMatrix * (new Vector4(vectorLength, 0, 0, 1));
+            Vector4 yAxis = transformMatrix * (new Vector4(0, vectorLength, 0, 1));
 			
             //Draw a polyline pivot and two axises in X and Y direction.
             g.DrawLine(Pens.Red, (float)Pivot.X, (float)Pivot.Y, (float)xAxis.X, (float)xAxis.Y);
