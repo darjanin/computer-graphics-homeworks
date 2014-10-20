@@ -40,14 +40,14 @@ namespace CG1.Ex03.Geometry
         public void Draw(Graphics g)
         {
             Vertex p0 = null;
-            double vectorLength = 40;
+            double vectorLenght = 40;
 
             // Transform matrix applied to all points
             Matrix44 transformMatrix = Matrix44.Translate(new Vector4(Pivot.X, Pivot.Y, 0, 1)) * Matrix44.RotateZ(OrientationZDeg) * Matrix44.Scale(Scale);
             
             //ToDo: Apply this new transform matrix to pivot axises
-            Vector4 xAxis = transformMatrix * (new Vector4(vectorLength, 0, 0, 1));
-            Vector4 yAxis = transformMatrix * (new Vector4(0, vectorLength, 0, 1));
+            Vector4 xAxis = transformMatrix * (new Vector4(vectorLenght, 0, 0, 1));
+            Vector4 yAxis = transformMatrix * (new Vector4(0, vectorLenght, 0, 1));
 			
             //Draw a polyline pivot and two axises in X and Y direction.
             g.DrawLine(Pens.Red, (float)Pivot.X, (float)Pivot.Y, (float)xAxis.X, (float)xAxis.Y);
@@ -79,10 +79,11 @@ namespace CG1.Ex03.Geometry
         /// <param name="a"></param>
         public void AddVertex(Vector4 point)
         {
-            Vertex v = new Vertex();
-            //ToDo: Change a position of vertex v to a position of local polyline vertex.
-            //      Vertex v is a local vertex of polyline. And polyline is global object of Form1.
-            //      So what will be a position of such vertex?
+            // Change a position of vertex v to a position of local polyline vertex.
+            // Vertex v is a local vertex of polyline. And polyline is global object of Form1.
+            // So what will be a position of such vertex?
+        	
+        	Vertex v = new Vertex();
             
 			Matrix44 transformMatrix = Matrix44.Scale(new Vector4(1/Scale.X, 1/Scale.Y, 0, 0)) * Matrix44.RotateZ(-OrientationZDeg) * Matrix44.Translate(new Vector4(-Pivot.X, -Pivot.Y, 0, 1));
 			v.Position = transformMatrix * point;
@@ -95,9 +96,10 @@ namespace CG1.Ex03.Geometry
             // Test if clicked point is near by polyline pivot
             // Try to do this with vectors.
             // If true then set IsSelected.
-            int pointRadius = 6;
-            if (Pivot.X > point.X - pointRadius && Pivot.X < point.X + pointRadius &&
-                Pivot.Y > point.Y - pointRadius && Pivot.Y < point.Y + pointRadius) 
+//            if (Pivot.X > point.X - pointRadius && Pivot.X < point.X + pointRadius &&
+//                Pivot.Y > point.Y - pointRadius && Pivot.Y < point.Y + pointRadius) 
+			// Check if length of the vector is smaller than specified length, recommended 6
+			if ((new Vector4(point.X - Pivot.X, point.Y - Pivot.Y,0,0)).Length <= 6)
             {
             	IsSelected = true;
             }
