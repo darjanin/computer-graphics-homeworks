@@ -277,7 +277,12 @@ namespace CG1.Ex05.Structure
 
                 for (Int32 i = 0; i < vertexCount; i++)
                 {
-                    //ToDo: Load all vertices and their positions from file.
+                    // Load all vertices and their positions from file.
+                    // Load new line from reader, split it and than create new MeshVertex
+                    // with leaving set to null
+                    line = reader.ReadLine();
+                    values = line.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                    mesh.AddVertex(new MeshVertex(new Vector4(Convert.ToInt32(values[0]), Convert.ToInt32(values[1]), 0, 0), null);
                 }
 
                 #endregion
@@ -288,15 +293,29 @@ namespace CG1.Ex05.Structure
                 {
                     //ToDo: Read next line. 
                     //      You can use first number - edge count for current face. It is converted to int k. 
+                    line = reader.ReadLine();
                     int k = Convert.ToInt32(values[0]);
                     mesh.AddFace(new MeshFace());
-
+					MeshFace tmpFace = mesh.faces.Last();
+					tmpFace.Edge = new HalfEdge();
+					HalfEdge tmpEdge = tmpFace.Edge;
                     for (Int32 j = 1; j <= k; j++)
                     {
                         int vertexIndex = Convert.ToInt32(values[j]);
-
+                        int directionIndex = (j != k) ? Convert.ToInt32(values[j+1]) : Convert.ToInt32(values[1]);
+						
+                        mesh.vertices[vertexIndex].Leaving = tmpEdge;
+                        
                         #region Half Edges Calculation
-
+                        tmpEdge.Origin = mesh.vertices[vertexIndex];
+                        tmpEdge.Direction = mesh.vertices[directionIndex];
+                        tmpEdge.Face = tmpFace;
+                        tmpEdge.Next = new HalfEdge();
+                        tmpEdge.SetCenter();
+                        
+                        tmpEdge = tmpEdge.Next;
+                        
+                        
                         //ToDo: Each indices is a vertex index to vertex in Vertices. 
                         //      Create all Edges.
 

@@ -20,3 +20,15 @@ D:\School\Phd Degree\Teaching\2013\CG1\Ex05\Template\CG1.Ex05\bin\Debug\CG1.Ex05
 D:\School\Phd Degree\Teaching\2013\CG1\Ex05\Template\CG1.Ex05\obj\x86\Debug\CG1.Ex05.Form1.resources
 D:\School\Phd Degree\Teaching\2013\CG1\Ex05\Template\CG1.Ex05\obj\x86\Debug\CG1.Ex05.Properties.Resources.resources
 D:\School\Phd Degree\Teaching\2013\CG1\Ex05\Template\CG1.Ex05\obj\x86\Debug\CG1.Ex05.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\bin\Debug\Meshes\example.off
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\bin\Debug\Meshes\hexagon.off
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\bin\Debug\Meshes\hexagon2.off
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\bin\Debug\Meshes\square.off
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\bin\Debug\CG1.Ex05.exe
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\bin\Debug\CG1.Ex05.pdb
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\obj\x86\Debug\CG1.Ex05.csprojResolveAssemblyReference.cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\obj\x86\Debug\CG1.Ex05.Form1.resources
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\obj\x86\Debug\CG1.Ex05.Properties.Resources.resources
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\obj\x86\Debug\CG1.Ex05.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\obj\x86\Debug\CG1.Ex05.exe
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex05\CG1.Ex05\obj\x86\Debug\CG1.Ex05.pdb

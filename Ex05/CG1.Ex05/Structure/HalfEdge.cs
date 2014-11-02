@@ -78,7 +78,7 @@ namespace CG1.Ex05.Structure
         public void SetCenter()
         {
             //ToDo: Compute center of current edge. Used in picking and drawing in method TrySelect() and Draw()
-            center = Vector4.Zero;
+            center = (Origin.Position + Direction.Position)/2;
         }
 
         #endregion
