@@ -1,0 +1,23 @@
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\bin\Debug\CG1.Ex04.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\bin\Debug\CG1.Ex04.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.Form1.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.Properties.Resources.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.csproj.GenerateResource.Cache
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Sample\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\bin\Debug\CG1.Ex04.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\bin\Debug\CG1.Ex04.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.csprojResolveAssemblyReference.cache
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.Form1.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.Properties.Resources.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex04\Template\CG1.Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\bin\Debug\CG1.Ex04.exe
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\bin\Debug\CG1.Ex04.pdb
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.csprojResolveAssemblyReference.cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.Form1.resources
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.Properties.Resources.resources
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.exe
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex04\CG1.Ex04\obj\x86\Debug\CG1.Ex04.pdb
