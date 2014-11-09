@@ -42,62 +42,85 @@ namespace CG1.Ex04.Clipping
             Lines = new List<Line>(lines);
 
             List<Line> outputLines = new List<Line>();
-            //ToDo: Here the algorithm could start
-            Line tmpLine;
+
             foreach (Line line in Lines) {
-            	tmpLine = magic(line);
-            	if (tmpLine != null) {
-            		tmpLine.allClipped = true;
-            		outputLines.Add(tmpLine);
-            	}
+            	outputLines.Add(CohanSutherlandAlg(line.v0.X, line.v0.Y, line.v1.X, line.v1.Y));
             }
 
             return outputLines;
         }
         
-        private Line magic(Line inputLine) {
-        	byte c1 = 0, c2 = 0, tmpByte;
-        	double tmpInt;
+        private Line CohanSutherlandAlg(double x0, double y0, double x1, double y1)
+        {
+        	byte code0 = code(x0, y0);
+        	byte code1 = code(x1, y1);
         	
-        	Line outputLine = inputLine;
+        	double x = 0, y = 0;
         	
-        	c2 = code(outputLine.v1.X, outputLine.v1.Y);
-        	while (true) {
-        		c1 = code(outputLine.v0.X, outputLine.v0.Y);
-        	
-        		if ((c1 & c2) != 0) return null;
-        		else if ((c1 | c2) == 0) return outputLine;
-        		else {
-        			if (c1 == 0) {
-        				// here comes swap of values
-        				tmpInt = outputLine.v0.X; outputLine.v0.X = outputLine.v1.X; outputLine.v1.X = tmpInt;
-        				tmpInt = outputLine.v0.Y; outputLine.v0.Y = outputLine.v1.Y; outputLine.v1.Y = tmpInt;
-        				tmpByte = c1; c1 = c2; c2 = tmpByte;
-        			} else if (c1 == 1 || c1 == 5 || c1 == 9) {
-			           	outputLine.v0.X = outputLine.v0.X + (outputLine.v1.X-outputLine.v0.X) * (ymax - outputLine.v0.Y) / (outputLine.v1.Y - outputLine.v0.Y);
-			           	outputLine.v0.Y = ymax;
-        			} else if (c1 == 2 || c1 == 6 || c1 == 10) {
-			           	outputLine.v0.X = outputLine.v0.X + (outputLine.v1.X-outputLine.v0.X) * (ymin - outputLine.v0.Y) / (outputLine.v1.Y - outputLine.v0.Y);
-			           	outputLine.v0.Y = ymin;
-        			} else if (c1 == 4 || c1 == 5 || c1 == 6) {
-			           	outputLine.v0.Y = outputLine.v0.Y + (outputLine.v1.Y-outputLine.v0.Y) * (xmax - outputLine.v0.X) / (outputLine.v1.X - outputLine.v0.X);
-			           	outputLine.v0.X = xmax;
-        			} else if (c1 == 8 || c1 == 9 || c1 == 10) {
-			           	outputLine.v0.Y = outputLine.v0.Y + (outputLine.v1.Y-outputLine.v0.Y) * (xmin - outputLine.v0.X) / (outputLine.v1.X - outputLine.v0.X);
-			           	outputLine.v0.X = xmin;
-        			}
+        	while (code0 != 0 || code1 != 0) 
+        	{
+        		if ((code0 & code1) != 0) 
+        		{
+        			x0=0;y0=0;
+        			x1=0;y1=0;
+        			break;
         		}
+        		
+    			byte codeOut = code0 != 0 ? code0 : code1;
+    			
+    			if ((codeOut & TOP) != 0) // test if intersect with top edge
+    			{
+    				x = x0 + (x1 - x0) * (ymin - y0) / (y1 - y0);
+    				y = ymin;
+    			}
+    			else if ((codeOut & BOTTOM) != 0) // test if intersect with bottom edge
+    			{
+    				x = x0 + (x1 - x0) * (ymax - y0) / (y1 - y0);
+    				y = ymax;
+    			}
+    			else if ((codeOut & RIGHT) != 0) // test if intersect with right edge
+    			{
+    				y = y0 + (y1 - y0) * (xmax - x0) / (x1 - x0);
+    				x = xmax;
+    			}
+    			else if ((codeOut & LEFT) != 0) // test if intersect with left edge
+    			{
+    				y = y0 + (y1 - y0) * (xmin - x0) / (x1 - x0);
+    				x = xmin;
+    			}
+    			
+    			if (codeOut == code0) 
+    			{
+    				x0 = x;
+    				y0 = y;
+    				code0 = code(x0, y0);
+    			} 
+    			else 
+    			{
+    				x1 = x;
+    				y1 = y;
+    				code1 = code(x1, y1);
+    			}
         	}
+
+        	return new Line(new Vector4(x0, y0, 0, 0), new Vector4(x1, y1, 0, 0));
         	
         }
         
         
         private byte code(double x, double y) {
+        	// calculate code for segment in which is point[x,y]
         	byte result = 0;
-        	if (x < xmin) result |= LEFT;
-        	else if (x > xmax) result |= RIGHT;
-        	if (y < ymin) result |= TOP;
-        	else if (y > ymax) result |= BOTTOM;
+        	
+        	if (x < xmin)
+        		result |= LEFT;
+        	else if (x > xmax)
+        		result |= RIGHT;
+        	if (y < ymin)
+        		result |= TOP;
+        	else if (y > ymax)
+        		result |= BOTTOM;
+        	
         	return result;
         }
        	
