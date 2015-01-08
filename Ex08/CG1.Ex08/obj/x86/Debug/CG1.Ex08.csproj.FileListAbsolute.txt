@@ -1,0 +1,29 @@
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Properties.Resources.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\obj\x86\Debug\CG1.Ex08.csproj.GenerateResource.Cache
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Form1.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\bin\Debug\CG1.Ex08.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\bin\Debug\CG1.Ex08.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\obj\x86\Debug\CG1.Ex08.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Sample\CG1.Ex08\obj\x86\Debug\CG1.Ex08.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\bin\Debug\CG1.Ex08.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\bin\Debug\CG1.Ex08.pdb
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Form1.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Properties.Resources.resources
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.csproj.GenerateResource.Cache
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.exe
+D:\School\Phd Degree\Teaching\2013\CG1\Ex08\Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.pdb
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.exe
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.pdb
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\bin\Debug\CG1.Ex08.exe
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\bin\Debug\CG1.Ex08.pdb
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Form1.resources
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Properties.Resources.resources
+C:\Users\mm\Desktop\Ex08.Template\CG1.Ex08\obj\x86\Debug\CG1.Ex08.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\bin\Debug\CG1.Ex08.exe
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\bin\Debug\CG1.Ex08.pdb
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\obj\x86\Debug\CG1.Ex08.csprojResolveAssemblyReference.cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Form1.resources
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\obj\x86\Debug\CG1.Ex08.Properties.Resources.resources
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\obj\x86\Debug\CG1.Ex08.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\obj\x86\Debug\CG1.Ex08.exe
+C:\Users\IEUser\Desktop\computer-graphics-homeworks\Ex08\CG1.Ex08\obj\x86\Debug\CG1.Ex08.pdb
